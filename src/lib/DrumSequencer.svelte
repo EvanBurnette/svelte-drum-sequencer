@@ -109,7 +109,7 @@
     </div>
   {/each}
   <div class="controls">
-    <button on:click={() => startStop()}>{playing ? "Stop" : "Start"}</button>
+    <button on:click={() => startStop()}>{playing ? "Click to Stop" : "Click to Start"}</button>
   </div>
 </div>
 
@@ -135,6 +135,7 @@
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     gap: 0.5rem;
+    padding: 0rem;
   }
   button:active {
     background: white;
